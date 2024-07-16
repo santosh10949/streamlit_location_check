@@ -36,6 +36,10 @@ if st.button("Click here to locate my locattion"):
             folium.Marker([latitude, longitude], tooltip='You are here').add_to(m)
             folium_static(m,height= 400,width=400)
 
+            with st.container():
+                       folium_static(m,height= 400,width=400)
+                       
+
             # st.map(latitude=latitude, longitude=longitude,)
         else :
               st.error('Click on Allow this Time to Capture Location')
