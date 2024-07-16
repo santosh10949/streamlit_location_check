@@ -44,3 +44,4 @@ if st.button("Click here to locate my locattion"):
               st.error('Click on Allow this Time to Capture Location')
 
 
+        st.write(latitude,longitude)   
