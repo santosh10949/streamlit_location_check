@@ -34,7 +34,6 @@ if st.button("Click here to locate my locattion"):
 
             m = folium.Map(location=[latitude, longitude], zoom_start=15)
             folium.Marker([latitude, longitude], tooltip='You are here').add_to(m)
-            folium_static(m,height= 400,width=400)
 
             with st.container():
                        folium_static(m,height= 400,width=400)
